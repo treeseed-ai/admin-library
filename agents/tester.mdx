@@ -47,35 +47,78 @@ activityProfiles:
     branchPolicy:
       kind: staging-content
       base: staging
-    contentAccess:
-      read:
-        models:
-          - question
-          - objective
-          - note
-          - proposal
-          - decision
-          - knowledge
-          - agent
-        actions:
-          - describe
-          - query
-          - read
-      write:
-        models:
-          - question
-          - objective
-          - note
-          - proposal
-          - decision
-          - knowledge
-          - agent
-        actions:
-          - create
-          - update
-          - link
-          - validate
-          - commit
+    permissions:
+      content:
+        question:
+          operations:
+            - describe
+            - query
+            - read
+            - create
+            - update
+            - link
+            - validate
+            - commit
+        objective:
+          operations:
+            - describe
+            - query
+            - read
+            - create
+            - update
+            - link
+            - validate
+            - commit
+        note:
+          operations:
+            - describe
+            - query
+            - read
+            - create
+            - update
+            - link
+            - validate
+            - commit
+        proposal:
+          operations:
+            - describe
+            - query
+            - read
+            - create
+            - update
+            - link
+            - validate
+            - commit
+        decision:
+          operations:
+            - describe
+            - query
+            - read
+            - create
+            - update
+            - link
+            - validate
+            - commit
+        knowledge:
+          operations:
+            - describe
+            - query
+            - read
+            - create
+            - update
+            - link
+            - validate
+            - commit
+        agent:
+          operations:
+            - describe
+            - query
+            - read
+            - create
+            - update
+            - link
+            - validate
+            - commit
       commit:
         allowed: true
     tools:
@@ -124,35 +167,78 @@ activityProfiles:
     branchPolicy:
       kind: read-only
       base: main
-    contentAccess:
-      read:
-        models:
-          - question
-          - objective
-          - note
-          - proposal
-          - decision
-          - knowledge
-          - agent
-        actions:
-          - describe
-          - query
-          - read
-      write:
-        models:
-          - question
-          - objective
-          - note
-          - proposal
-          - decision
-          - knowledge
-          - agent
-        actions:
-          - create
-          - update
-          - link
-          - validate
-          - commit
+    permissions:
+      content:
+        question:
+          operations:
+            - describe
+            - query
+            - read
+            - create
+            - update
+            - link
+            - validate
+            - commit
+        objective:
+          operations:
+            - describe
+            - query
+            - read
+            - create
+            - update
+            - link
+            - validate
+            - commit
+        note:
+          operations:
+            - describe
+            - query
+            - read
+            - create
+            - update
+            - link
+            - validate
+            - commit
+        proposal:
+          operations:
+            - describe
+            - query
+            - read
+            - create
+            - update
+            - link
+            - validate
+            - commit
+        decision:
+          operations:
+            - describe
+            - query
+            - read
+            - create
+            - update
+            - link
+            - validate
+            - commit
+        knowledge:
+          operations:
+            - describe
+            - query
+            - read
+            - create
+            - update
+            - link
+            - validate
+            - commit
+        agent:
+          operations:
+            - describe
+            - query
+            - read
+            - create
+            - update
+            - link
+            - validate
+            - commit
       commit:
         allowed: false
     tools:
@@ -193,35 +279,78 @@ activityProfiles:
     branchPolicy:
       kind: read-only
       base: main
-    contentAccess:
-      read:
-        models:
-          - question
-          - objective
-          - note
-          - proposal
-          - decision
-          - knowledge
-          - agent
-        actions:
-          - describe
-          - query
-          - read
-      write:
-        models:
-          - question
-          - objective
-          - note
-          - proposal
-          - decision
-          - knowledge
-          - agent
-        actions:
-          - create
-          - update
-          - link
-          - validate
-          - commit
+    permissions:
+      content:
+        question:
+          operations:
+            - describe
+            - query
+            - read
+            - create
+            - update
+            - link
+            - validate
+            - commit
+        objective:
+          operations:
+            - describe
+            - query
+            - read
+            - create
+            - update
+            - link
+            - validate
+            - commit
+        note:
+          operations:
+            - describe
+            - query
+            - read
+            - create
+            - update
+            - link
+            - validate
+            - commit
+        proposal:
+          operations:
+            - describe
+            - query
+            - read
+            - create
+            - update
+            - link
+            - validate
+            - commit
+        decision:
+          operations:
+            - describe
+            - query
+            - read
+            - create
+            - update
+            - link
+            - validate
+            - commit
+        knowledge:
+          operations:
+            - describe
+            - query
+            - read
+            - create
+            - update
+            - link
+            - validate
+            - commit
+        agent:
+          operations:
+            - describe
+            - query
+            - read
+            - create
+            - update
+            - link
+            - validate
+            - commit
       commit:
         allowed: false
     tools:
@@ -268,37 +397,82 @@ activityProfiles:
       updateBaseBeforeRun: true
       mergeTargetBeforeSave: true
       prefix: tester
-    contentAccess:
-      read:
-        models:
-          - question
-          - objective
-          - note
-          - proposal
-          - decision
-          - knowledge
-          - agent
-        actions:
-          - describe
-          - query
-          - read
-      write:
-        models:
-          - question
-          - objective
-          - note
-          - proposal
-          - decision
-          - knowledge
-          - agent
-        actions:
-          - create
-          - update
-          - link
-          - validate
-          - commit
+    permissions:
+      content:
+        question:
+          operations:
+            - describe
+            - query
+            - read
+            - create
+            - update
+            - link
+            - validate
+            - commit
+        objective:
+          operations:
+            - describe
+            - query
+            - read
+            - create
+            - update
+            - link
+            - validate
+            - commit
+        note:
+          operations:
+            - describe
+            - query
+            - read
+            - create
+            - update
+            - link
+            - validate
+            - commit
+        proposal:
+          operations:
+            - describe
+            - query
+            - read
+            - create
+            - update
+            - link
+            - validate
+            - commit
+        decision:
+          operations:
+            - describe
+            - query
+            - read
+            - create
+            - update
+            - link
+            - validate
+            - commit
+        knowledge:
+          operations:
+            - describe
+            - query
+            - read
+            - create
+            - update
+            - link
+            - validate
+            - commit
+        agent:
+          operations:
+            - describe
+            - query
+            - read
+            - create
+            - update
+            - link
+            - validate
+            - commit
       commit:
         allowed: true
+      repository:
+        allowCodeMutation: true
     tools:
       allowed:
         - treeseed.content.describe
