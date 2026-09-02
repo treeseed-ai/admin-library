@@ -8,21 +8,26 @@ projectAgentClassId: testing
 projectAgentClassSlug: testing
 template: engineering-agent/tester
 enabled: true
-description: Creates tests before implementation and verifies behavior without modifying implementation code.
-summary: Creates tests before implementation and verifies behavior without modifying implementation code.
+description: Creates tests before implementation and verifies behavior without
+  modifying implementation code.
+summary: Creates tests before implementation and verifies behavior without
+  modifying implementation code.
 runtimeStatus: active
 groupIds:
   - agent
   - engineering-team
   - testing
 identity:
-  purpose: Creates tests before implementation and verifies behavior without modifying implementation code.
+  purpose: Creates tests before implementation and verifies behavior without
+    modifying implementation code.
   responsibilities:
     - Participate in autonomous planning for the project.
     - Submit structured estimates when assigned estimating work.
     - Use only profile-scoped tools and TreeDX-backed content operations.
-  durableInstructions: |
-    Keep all work scoped to this project and activity profile. Create TreeSeed content as Astro content model Markdown through TreeDX tools. Ask questions through TreeDX question content when blocked.
+  durableInstructions: >
+    Keep all work scoped to this project and activity profile. Create TreeSeed
+    content as Astro content model Markdown through TreeDX tools. Ask questions
+    through TreeDX question content when blocked.
 capabilities:
   - id: testing.planning
     description: Planning support for testing.
@@ -41,8 +46,11 @@ activityProfiles:
     enabled: true
     handler: writer
     prompt:
-      system: |
-        You are the Tester for this TreeSeed project. Creates tests before implementation and verifies behavior without modifying implementation code. Use TreeDX-backed content tools for all project content and keep work scoped to the current activity profile.
+      system: >
+        You are the Tester for this TreeSeed project. Creates tests before
+        implementation and verifies behavior without modifying implementation
+        code. Use TreeDX-backed content tools for all project content and keep
+        work scoped to the current activity profile.
       task: planning
     branchPolicy:
       kind: staging-content
@@ -151,18 +159,25 @@ activityProfiles:
       defaultAnswerPolicy:
         kind: human-or-agent
     execution:
-      requiredCapabilities:
-        - agent-execution
       maxRuntimeSeconds: 1800
       maxRetries: 2
       verificationRequired: true
+    capabilityRequirements:
+      - capabilityId: treeseed.coordination.planning
+        versionRange: ^1.0.0
+        requirement: required
+        requiredFeatures: []
+        configuration: {}
   estimating:
     activityType: estimating
     enabled: true
     handler: estimate
     prompt:
-      system: |
-        You are the Tester for this TreeSeed project. Creates tests before implementation and verifies behavior without modifying implementation code. Use TreeDX-backed content tools for all project content and keep work scoped to the current activity profile.
+      system: >
+        You are the Tester for this TreeSeed project. Creates tests before
+        implementation and verifies behavior without modifying implementation
+        code. Use TreeDX-backed content tools for all project content and keep
+        work scoped to the current activity profile.
       task: estimating
     branchPolicy:
       kind: read-only
@@ -263,18 +278,25 @@ activityProfiles:
       defaultAnswerPolicy:
         kind: human-or-agent
     execution:
-      requiredCapabilities:
-        - agent-execution
       maxRuntimeSeconds: 1800
       maxRetries: 2
       verificationRequired: false
+    capabilityRequirements:
+      - capabilityId: treeseed.coordination.estimation
+        versionRange: ^1.0.0
+        requirement: required
+        requiredFeatures: []
+        configuration: {}
   reviewing:
     activityType: reviewing
     enabled: true
     handler: writer
     prompt:
-      system: |
-        You are the Tester for this TreeSeed project. Creates tests before implementation and verifies behavior without modifying implementation code. Use TreeDX-backed content tools for all project content and keep work scoped to the current activity profile.
+      system: >
+        You are the Tester for this TreeSeed project. Creates tests before
+        implementation and verifies behavior without modifying implementation
+        code. Use TreeDX-backed content tools for all project content and keep
+        work scoped to the current activity profile.
       task: reviewing
     branchPolicy:
       kind: read-only
@@ -375,18 +397,25 @@ activityProfiles:
       defaultAnswerPolicy:
         kind: human-or-agent
     execution:
-      requiredCapabilities:
-        - agent-execution
       maxRuntimeSeconds: 1800
       maxRetries: 2
       verificationRequired: false
+    capabilityRequirements:
+      - capabilityId: treeseed.engineering.review
+        versionRange: ^1.0.0
+        requirement: required
+        requiredFeatures: []
+        configuration: {}
   acting:
     activityType: acting
     enabled: true
     handler: actor
     prompt:
-      system: |
-        You are the Tester for this TreeSeed project. Creates tests before implementation and verifies behavior without modifying implementation code. Use TreeDX-backed content tools for all project content and keep work scoped to the current activity profile.
+      system: >
+        You are the Tester for this TreeSeed project. Creates tests before
+        implementation and verifies behavior without modifying implementation
+        code. Use TreeDX-backed content tools for all project content and keep
+        work scoped to the current activity profile.
       task: acting
     branchPolicy:
       kind: assignment-feature
@@ -505,11 +534,15 @@ activityProfiles:
       defaultAnswerPolicy:
         kind: human-or-agent
     execution:
-      requiredCapabilities:
-        - agent-execution
       maxRuntimeSeconds: 1800
       maxRetries: 2
       verificationRequired: true
+    capabilityRequirements:
+      - capabilityId: treeseed.engineering.integration-testing
+        versionRange: ^1.0.0
+        requirement: required
+        requiredFeatures: []
+        configuration: {}
 ---
 
 Tester for the admin TreeSeed project.

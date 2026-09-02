@@ -8,21 +8,26 @@ projectAgentClassId: release
 projectAgentClassSlug: release
 template: engineering-agent/releaser
 enabled: true
-description: Verifies staged changes and coordinates reliable release from staging through TreeSeed release operations.
-summary: Verifies staged changes and coordinates reliable release from staging through TreeSeed release operations.
+description: Verifies staged changes and coordinates reliable release from
+  staging through TreeSeed release operations.
+summary: Verifies staged changes and coordinates reliable release from staging
+  through TreeSeed release operations.
 runtimeStatus: active
 groupIds:
   - agent
   - engineering-team
   - release
 identity:
-  purpose: Verifies staged changes and coordinates reliable release from staging through TreeSeed release operations.
+  purpose: Verifies staged changes and coordinates reliable release from staging
+    through TreeSeed release operations.
   responsibilities:
     - Participate in autonomous planning for the project.
     - Submit structured estimates when assigned estimating work.
     - Use only profile-scoped tools and TreeDX-backed content operations.
-  durableInstructions: |
-    Keep all work scoped to this project and activity profile. Create TreeSeed content as Astro content model Markdown through TreeDX tools. Ask questions through TreeDX question content when blocked.
+  durableInstructions: >
+    Keep all work scoped to this project and activity profile. Create TreeSeed
+    content as Astro content model Markdown through TreeDX tools. Ask questions
+    through TreeDX question content when blocked.
 capabilities:
   - id: release.planning
     description: Planning support for release.
@@ -41,8 +46,11 @@ activityProfiles:
     enabled: true
     handler: writer
     prompt:
-      system: |
-        You are the Releaser for this TreeSeed project. Verifies staged changes and coordinates reliable release from staging through TreeSeed release operations. Use TreeDX-backed content tools for all project content and keep work scoped to the current activity profile.
+      system: >
+        You are the Releaser for this TreeSeed project. Verifies staged changes
+        and coordinates reliable release from staging through TreeSeed release
+        operations. Use TreeDX-backed content tools for all project content and
+        keep work scoped to the current activity profile.
       task: planning
     branchPolicy:
       kind: staging-release
@@ -155,18 +163,25 @@ activityProfiles:
       defaultAnswerPolicy:
         kind: team-human
     execution:
-      requiredCapabilities:
-        - agent-execution
       maxRuntimeSeconds: 1800
       maxRetries: 2
       verificationRequired: false
+    capabilityRequirements:
+      - capabilityId: treeseed.coordination.planning
+        versionRange: ^1.0.0
+        requirement: required
+        requiredFeatures: []
+        configuration: {}
   estimating:
     activityType: estimating
     enabled: true
     handler: estimate
     prompt:
-      system: |
-        You are the Releaser for this TreeSeed project. Verifies staged changes and coordinates reliable release from staging through TreeSeed release operations. Use TreeDX-backed content tools for all project content and keep work scoped to the current activity profile.
+      system: >
+        You are the Releaser for this TreeSeed project. Verifies staged changes
+        and coordinates reliable release from staging through TreeSeed release
+        operations. Use TreeDX-backed content tools for all project content and
+        keep work scoped to the current activity profile.
       task: estimating
     branchPolicy:
       kind: read-only
@@ -267,18 +282,25 @@ activityProfiles:
       defaultAnswerPolicy:
         kind: team-human
     execution:
-      requiredCapabilities:
-        - agent-execution
       maxRuntimeSeconds: 1800
       maxRetries: 2
       verificationRequired: false
+    capabilityRequirements:
+      - capabilityId: treeseed.coordination.estimation
+        versionRange: ^1.0.0
+        requirement: required
+        requiredFeatures: []
+        configuration: {}
   reviewing:
     activityType: reviewing
     enabled: true
     handler: writer
     prompt:
-      system: |
-        You are the Releaser for this TreeSeed project. Verifies staged changes and coordinates reliable release from staging through TreeSeed release operations. Use TreeDX-backed content tools for all project content and keep work scoped to the current activity profile.
+      system: >
+        You are the Releaser for this TreeSeed project. Verifies staged changes
+        and coordinates reliable release from staging through TreeSeed release
+        operations. Use TreeDX-backed content tools for all project content and
+        keep work scoped to the current activity profile.
       task: reviewing
     branchPolicy:
       kind: read-only
@@ -379,18 +401,25 @@ activityProfiles:
       defaultAnswerPolicy:
         kind: team-human
     execution:
-      requiredCapabilities:
-        - agent-execution
       maxRuntimeSeconds: 1800
       maxRetries: 2
       verificationRequired: false
+    capabilityRequirements:
+      - capabilityId: treeseed.engineering.review
+        versionRange: ^1.0.0
+        requirement: required
+        requiredFeatures: []
+        configuration: {}
   acting:
     activityType: acting
     enabled: true
     handler: releaser
     prompt:
-      system: |
-        You are the Releaser for this TreeSeed project. Verifies staged changes and coordinates reliable release from staging through TreeSeed release operations. Use TreeDX-backed content tools for all project content and keep work scoped to the current activity profile.
+      system: >
+        You are the Releaser for this TreeSeed project. Verifies staged changes
+        and coordinates reliable release from staging through TreeSeed release
+        operations. Use TreeDX-backed content tools for all project content and
+        keep work scoped to the current activity profile.
       task: acting
     branchPolicy:
       kind: staging-release
@@ -502,11 +531,15 @@ activityProfiles:
       defaultAnswerPolicy:
         kind: team-human
     execution:
-      requiredCapabilities:
-        - agent-execution
       maxRuntimeSeconds: 1800
       maxRetries: 2
       verificationRequired: false
+    capabilityRequirements:
+      - capabilityId: treeseed.engineering.release
+        versionRange: ^1.0.0
+        requirement: required
+        requiredFeatures: []
+        configuration: {}
 ---
 
 Releaser for the admin TreeSeed project.

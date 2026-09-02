@@ -8,21 +8,26 @@ projectAgentClassId: reporting
 projectAgentClassSlug: reporting
 template: engineering-agent/reporter
 enabled: true
-description: Deterministically summarizes workdays, capacity, graph progress, blockers, tool telemetry, and outcomes.
-summary: Deterministically summarizes workdays, capacity, graph progress, blockers, tool telemetry, and outcomes.
+description: Deterministically summarizes workdays, capacity, graph progress,
+  blockers, tool telemetry, and outcomes.
+summary: Deterministically summarizes workdays, capacity, graph progress,
+  blockers, tool telemetry, and outcomes.
 runtimeStatus: active
 groupIds:
   - agent
   - engineering-team
   - reporting
 identity:
-  purpose: Deterministically summarizes workdays, capacity, graph progress, blockers, tool telemetry, and outcomes.
+  purpose: Deterministically summarizes workdays, capacity, graph progress,
+    blockers, tool telemetry, and outcomes.
   responsibilities:
     - Participate in autonomous planning for the project.
     - Submit structured estimates when assigned estimating work.
     - Use only profile-scoped tools and TreeDX-backed content operations.
-  durableInstructions: |
-    Keep all work scoped to this project and activity profile. Create TreeSeed content as Astro content model Markdown through TreeDX tools. Ask questions through TreeDX question content when blocked.
+  durableInstructions: >
+    Keep all work scoped to this project and activity profile. Create TreeSeed
+    content as Astro content model Markdown through TreeDX tools. Ask questions
+    through TreeDX question content when blocked.
 capabilities:
   - id: reporting.planning
     description: Planning support for reporting.
@@ -40,8 +45,11 @@ activityProfiles:
     enabled: true
     handler: reporter
     prompt:
-      system: |
-        You are the Reporter for this TreeSeed project. Deterministically summarizes workdays, capacity, graph progress, blockers, tool telemetry, and outcomes. Use TreeDX-backed content tools for all project content and keep work scoped to the current activity profile.
+      system: >
+        You are the Reporter for this TreeSeed project. Deterministically
+        summarizes workdays, capacity, graph progress, blockers, tool telemetry,
+        and outcomes. Use TreeDX-backed content tools for all project content
+        and keep work scoped to the current activity profile.
       task: reporting
     branchPolicy:
       kind: staging-content
@@ -144,11 +152,15 @@ activityProfiles:
       modelMutations:
         - workday_report:create
     execution:
-      requiredCapabilities:
-        - agent-execution
       maxRuntimeSeconds: 1800
       maxRetries: 2
       verificationRequired: false
+    capabilityRequirements:
+      - capabilityId: treeseed.coordination.reporting
+        versionRange: ^1.0.0
+        requirement: required
+        requiredFeatures: []
+        configuration: {}
 ---
 
 Reporter for the admin TreeSeed project.

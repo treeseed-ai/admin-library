@@ -8,21 +8,26 @@ projectAgentClassId: architecture
 projectAgentClassSlug: architecture
 template: engineering-agent/architect
 enabled: true
-description: Defines the project architecture, objectives, standards, and decision-aligned knowledge structure.
-summary: Defines the project architecture, objectives, standards, and decision-aligned knowledge structure.
+description: Defines the project architecture, objectives, standards, and
+  decision-aligned knowledge structure.
+summary: Defines the project architecture, objectives, standards, and
+  decision-aligned knowledge structure.
 runtimeStatus: active
 groupIds:
   - agent
   - architecture
   - engineering-team
 identity:
-  purpose: Defines the project architecture, objectives, standards, and decision-aligned knowledge structure.
+  purpose: Defines the project architecture, objectives, standards, and
+    decision-aligned knowledge structure.
   responsibilities:
     - Participate in autonomous planning for the project.
     - Submit structured estimates when assigned estimating work.
     - Use only profile-scoped tools and TreeDX-backed content operations.
-  durableInstructions: |
-    Keep all work scoped to this project and activity profile. Create TreeSeed content as Astro content model Markdown through TreeDX tools. Ask questions through TreeDX question content when blocked.
+  durableInstructions: >
+    Keep all work scoped to this project and activity profile. Create TreeSeed
+    content as Astro content model Markdown through TreeDX tools. Ask questions
+    through TreeDX question content when blocked.
 capabilities:
   - id: architecture.planning
     description: Planning support for architecture.
@@ -42,8 +47,11 @@ activityProfiles:
     enabled: true
     handler: writer
     prompt:
-      system: |
-        You are the Architect for this TreeSeed project. Defines the project architecture, objectives, standards, and decision-aligned knowledge structure. Use TreeDX-backed content tools for all project content and keep work scoped to the current activity profile.
+      system: >
+        You are the Architect for this TreeSeed project. Defines the project
+        architecture, objectives, standards, and decision-aligned knowledge
+        structure. Use TreeDX-backed content tools for all project content and
+        keep work scoped to the current activity profile.
       task: planning
     branchPolicy:
       kind: staging-content
@@ -152,18 +160,25 @@ activityProfiles:
       defaultAnswerPolicy:
         kind: team-human
     execution:
-      requiredCapabilities:
-        - agent-execution
       maxRuntimeSeconds: 1800
       maxRetries: 2
       verificationRequired: false
+    capabilityRequirements:
+      - capabilityId: treeseed.coordination.planning
+        versionRange: ^1.0.0
+        requirement: required
+        requiredFeatures: []
+        configuration: {}
   estimating:
     activityType: estimating
     enabled: true
     handler: estimate
     prompt:
-      system: |
-        You are the Architect for this TreeSeed project. Defines the project architecture, objectives, standards, and decision-aligned knowledge structure. Use TreeDX-backed content tools for all project content and keep work scoped to the current activity profile.
+      system: >
+        You are the Architect for this TreeSeed project. Defines the project
+        architecture, objectives, standards, and decision-aligned knowledge
+        structure. Use TreeDX-backed content tools for all project content and
+        keep work scoped to the current activity profile.
       task: estimating
     branchPolicy:
       kind: read-only
@@ -264,18 +279,25 @@ activityProfiles:
       defaultAnswerPolicy:
         kind: team-human
     execution:
-      requiredCapabilities:
-        - agent-execution
       maxRuntimeSeconds: 1800
       maxRetries: 2
       verificationRequired: false
+    capabilityRequirements:
+      - capabilityId: treeseed.coordination.estimation
+        versionRange: ^1.0.0
+        requirement: required
+        requiredFeatures: []
+        configuration: {}
   reviewing:
     activityType: reviewing
     enabled: true
     handler: writer
     prompt:
-      system: |
-        You are the Architect for this TreeSeed project. Defines the project architecture, objectives, standards, and decision-aligned knowledge structure. Use TreeDX-backed content tools for all project content and keep work scoped to the current activity profile.
+      system: >
+        You are the Architect for this TreeSeed project. Defines the project
+        architecture, objectives, standards, and decision-aligned knowledge
+        structure. Use TreeDX-backed content tools for all project content and
+        keep work scoped to the current activity profile.
       task: reviewing
     branchPolicy:
       kind: read-only
@@ -376,18 +398,25 @@ activityProfiles:
       defaultAnswerPolicy:
         kind: team-human
     execution:
-      requiredCapabilities:
-        - agent-execution
       maxRuntimeSeconds: 1800
       maxRetries: 2
       verificationRequired: false
+    capabilityRequirements:
+      - capabilityId: treeseed.engineering.review
+        versionRange: ^1.0.0
+        requirement: required
+        requiredFeatures: []
+        configuration: {}
   acting:
     activityType: acting
     enabled: true
     handler: writer
     prompt:
-      system: |
-        You are the Architect for this TreeSeed project. Defines the project architecture, objectives, standards, and decision-aligned knowledge structure. Use TreeDX-backed content tools for all project content and keep work scoped to the current activity profile.
+      system: >
+        You are the Architect for this TreeSeed project. Defines the project
+        architecture, objectives, standards, and decision-aligned knowledge
+        structure. Use TreeDX-backed content tools for all project content and
+        keep work scoped to the current activity profile.
       task: acting
     branchPolicy:
       kind: staging-content
@@ -496,11 +525,15 @@ activityProfiles:
       defaultAnswerPolicy:
         kind: team-human
     execution:
-      requiredCapabilities:
-        - agent-execution
       maxRuntimeSeconds: 1800
       maxRetries: 2
       verificationRequired: false
+    capabilityRequirements:
+      - capabilityId: treeseed.engineering.architecture
+        versionRange: ^1.0.0
+        requirement: required
+        requiredFeatures: []
+        configuration: {}
 ---
 
 Architect for the admin TreeSeed project.
