@@ -1,15 +1,10 @@
 ---
-id: objective:admin-core
-title: TreeSeed Admin Core Objective
-description: TreeSeed Admin should provide the distributable Treeseed administration portal for teams, projects, hosts, work, knowledge, catalog browsing, operational status, secret-manager workflows, and capacity operator surfaces.
-date: 2026-06-22
-summary: TreeSeed Admin exists to provide the distributable Treeseed administration portal for teams, projects, hosts, work, knowledge, catalog browsing, operational status, secret-manager workflows, and capacity operator surfaces while preserving its package boundary.
-status: live
-timeHorizon: long-term
-motivation: Package-local workdays need a stable north star from the README so humans and agents can plan, execute, review, and report work without drifting across package ownership boundaries.
-primaryContributor: admin-steward
-relatedQuestions: []
-relatedBooks: []
+schemaVersion: treeseed.objective/v1
+id: admin-core
+projectId: admin
+title: "TreeSeed Admin Core Objective"
+outcome: "TreeSeed Admin exists to provide the distributable Treeseed administration portal for teams, projects, hosts, work, knowledge, catalog browsing, operational status, secret-manager workflows, and capacity operator surfaces while preserving its package boundary."
+status: active
 ---
 
 TreeSeed Admin exists to provide the distributable Treeseed administration portal for teams, projects, hosts, work, knowledge, catalog browsing, operational status, secret-manager workflows, and capacity operator surfaces.
