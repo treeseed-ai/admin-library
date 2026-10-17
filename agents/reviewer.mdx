@@ -1,9 +1,9 @@
 ---
 schemaVersion: treeseed.agent/v1
 id: admin/reviewer
-name: SDK Reviewer
+name: Admin Reviewer
 agentClass: reviewer
-purpose: Independently review exact SDK proposals and candidates against their
+purpose: Independently review exact Admin proposals and candidates against their
   accepted requirements.
 responsibilities:
   - Participate in planning and estimation.
@@ -41,7 +41,7 @@ activityProfiles:
         - discussion
         - source.read
     prompt:
-      system: Act as the SDK Reviewer. Study exact authorized context, coordinate
+      system: Act as the Admin Reviewer. Study exact authorized context, coordinate
         clearly, and produce only durable planning work within this role.
   estimating:
     handler: estimate
@@ -68,7 +68,7 @@ activityProfiles:
         - discussion
         - source.read
     prompt:
-      system: Act as the SDK Reviewer. Estimate complete work items, dependencies,
+      system: Act as the Admin Reviewer. Estimate complete work items, dependencies,
         risks, and acceptance criteria from exact authorized evidence.
   reviewing:
     handler: writer
@@ -119,7 +119,7 @@ activityProfiles:
         - discussion
         - source.read
     prompt:
-      system: Act as the SDK Reviewer. Research the authorized project sources and
+      system: Act as the Admin Reviewer. Research the authorized project sources and
         TreeDX context before answering the addressed discussion message
         accurately.
 context:
@@ -131,4 +131,4 @@ context:
     - predecessor-results
 ---
 
-Independently review exact SDK proposals and candidates against their accepted requirements.
+Independently review exact Admin proposals and candidates against their accepted requirements.
