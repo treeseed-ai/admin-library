@@ -1,0 +1,7 @@
+schemaVersion: treeseed.proposal-type/v1
+id: implementation
+label: Implementation
+description: A bounded project source change with exact candidate evidence and independent review.
+defaultPriority: normal
+requiredReviewerClasses:
+  - reviewer
