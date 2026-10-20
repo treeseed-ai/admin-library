@@ -1,7 +1,14 @@
 ---
-schemaVersion: treeseed.knowledge-page/v1
+schemaVersion: treeseed.knowledge-page/v2
 id: services.vaults.external
-bookId: treeseed-admin-user-guide
+projectId: 4c520946-e4c3-460d-a50f-255b65c78451
+bookRef:
+  store: treedx
+  model: book
+  id: treeseed-admin-user-guide
+  path: books/user-guide.md
+  revision: 1
+  digest: sha256:dcf81b7bb1de30fdaebb473bba84a63dae6cb7af91d945d3eb1495e9bab1abec
 slug: external-vault-setup
 title: Review an external vault configuration
 summary: Use the local wizard without confusing a validated draft with a
@@ -9,6 +16,7 @@ summary: Use the local wizard without confusing a validated draft with a
 status: published
 visibility: authenticated
 order: 0
+groupIds: []
 contributors: []
 relatedBookIds: []
 relatedKnowledgeIds:
@@ -49,4 +57,3 @@ A team owner or service administrator can open **Connect your own vault** on the
 **Connection verification is currently unavailable.** The disabled Verify and connect button means this screen cannot yet create an external-vault binding, authenticate with AppRole or migrate existing credentials. Field validation is not a connectivity or permission check. Keep using the provided managed vault for current service connections.
 
 Do not supply a root token or paste secrets into the address or mount fields. A completed backend integration must establish scoped authentication and verify destination access before changing active storage.
-

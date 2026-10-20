@@ -1,7 +1,14 @@
 ---
-schemaVersion: treeseed.knowledge-page/v1
+schemaVersion: treeseed.knowledge-page/v2
 id: services.vaults.trust
-bookId: treeseed-admin-user-guide
+projectId: 4c520946-e4c3-460d-a50f-255b65c78451
+bookRef:
+  store: treedx
+  model: book
+  id: treeseed-admin-user-guide
+  path: books/user-guide.md
+  revision: 1
+  digest: sha256:dcf81b7bb1de30fdaebb473bba84a63dae6cb7af91d945d3eb1495e9bab1abec
 slug: vault-trust
 title: How vault custody protects credentials
 summary: Understand who can retrieve credentials and where sensitive values
@@ -9,6 +16,7 @@ summary: Understand who can retrieve credentials and where sensitive values
 status: published
 visibility: authenticated
 order: 0
+groupIds: []
 contributors: []
 relatedBookIds: []
 relatedKnowledgeIds:
@@ -47,4 +55,3 @@ Do not place tokens, private keys or vault login material in documentation, Git,
 
 ## External vaults
 Using your own vault changes who operates credential storage; it does not remove the control plane's need for authorized access. External setup must verify TLS trust, network access and scoped authentication before credentials can be moved. The current local configuration screen does not perform that transition: its verification action is disabled.
-

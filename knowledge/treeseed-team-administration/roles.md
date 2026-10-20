@@ -1,7 +1,14 @@
 ---
-schemaVersion: treeseed.knowledge-page/v1
+schemaVersion: treeseed.knowledge-page/v2
 id: team.roles
-bookId: treeseed-team-administration
+projectId: 4c520946-e4c3-460d-a50f-255b65c78451
+bookRef:
+  store: treedx
+  model: book
+  id: treeseed-team-administration
+  path: books/team-administration.md
+  revision: 1
+  digest: sha256:23e3cb76f26e0a12710ce146cb3eabf34f770a8ae9fec1d50100505bc4605dda
 slug: roles
 title: Team roles and permissions
 summary: Compare human-readable responsibilities and understand which
@@ -27,6 +34,11 @@ relatedQuestionIds: []
 relatedObjectiveIds: []
 relatedProposalIds: []
 relatedDecisionIds: []
+guaranteeIds: []
+audiences:
+  primary: []
+  secondary: []
+  excluded: []
 capabilityIds:
   - admin.team.members
 routePatterns:
@@ -49,4 +61,3 @@ documentationUrls: []
 Roles are reusable responsibility sets. TreeSeed displays their permissions in human language so administrators can review the effect before changing access.
 
 Owners control ownership and lifecycle operations. Project leads may manage non-owner membership and team identity. Other roles can view the directory but cannot administer members.
-

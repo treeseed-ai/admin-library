@@ -1,7 +1,14 @@
 ---
-schemaVersion: treeseed.knowledge-page/v1
+schemaVersion: treeseed.knowledge-page/v2
 id: feedback.privacy
-bookId: treeseed-feedback-and-support
+projectId: 4c520946-e4c3-460d-a50f-255b65c78451
+bookRef:
+  store: treedx
+  model: book
+  id: treeseed-feedback-and-support
+  path: books/feedback-and-support.md
+  revision: 1
+  digest: sha256:f299eab796a35381e4ac5ef43b5305dc86bb3efe1f79fd832923035e9bd381f8
 slug: privacy
 title: Feedback privacy boundary
 summary: Learn which context is stored, who can inspect it, and how retention works.
@@ -25,6 +32,11 @@ relatedQuestionIds: []
 relatedObjectiveIds: []
 relatedProposalIds: []
 relatedDecisionIds: []
+guaranteeIds: []
+audiences:
+  primary: []
+  secondary: []
+  excluded: []
 capabilityIds:
   - admin.feedback.submit
   - admin.feedback.detail

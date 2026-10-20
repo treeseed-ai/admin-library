@@ -1,7 +1,14 @@
 ---
-schemaVersion: treeseed.knowledge-page/v1
+schemaVersion: treeseed.knowledge-page/v2
 id: vault.rotation
-bookId: treeseed-credential-security
+projectId: 4c520946-e4c3-460d-a50f-255b65c78451
+bookRef:
+  store: treedx
+  model: book
+  id: treeseed-credential-security
+  path: books/credential-security.md
+  revision: 1
+  digest: sha256:e93c794a57eb4172e152306d2585a1ee2fd51f2d37e123f3eb7a277940849d24
 slug: rotation
 title: Passphrase, team-key, and provider credential rotation
 summary: Choose the rotation that matches the material that may be exposed.
@@ -23,6 +30,11 @@ relatedQuestionIds: []
 relatedObjectiveIds: []
 relatedProposalIds: []
 relatedDecisionIds: []
+guaranteeIds: []
+audiences:
+  primary: []
+  secondary: []
+  excluded: []
 capabilityIds:
   - admin.services.vault
 routePatterns:

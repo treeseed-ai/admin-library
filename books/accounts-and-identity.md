@@ -1,6 +1,8 @@
 ---
-schemaVersion: treeseed.book/v2
+schemaVersion: treeseed.book/v3
 id: treeseed-accounts-and-identity
+projectId: 4c520946-e4c3-460d-a50f-255b65c78451
+revision: 1
 slug: accounts-and-identity
 title: TreeSeed Accounts and Identity
 summary: Manage identity, authentication, preferences, sessions, and account security.
@@ -12,8 +14,11 @@ groupIds:
   - accounts
   - authentication
   - identity
-audience: [TreeSeed users]
-relatedBookIds: [treeseed-team-administration, treeseed-credential-security]
+audience:
+  - TreeSeed users
+relatedBookIds:
+  - treeseed-team-administration
+  - treeseed-credential-security
 packPolicy: allowed
 ---
 

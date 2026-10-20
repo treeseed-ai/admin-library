@@ -1,7 +1,14 @@
 ---
-schemaVersion: treeseed.knowledge-page/v1
+schemaVersion: treeseed.knowledge-page/v2
 id: services.external-vault
-bookId: treeseed-services-and-providers
+projectId: 4c520946-e4c3-460d-a50f-255b65c78451
+bookRef:
+  store: treedx
+  model: book
+  id: treeseed-services-and-providers
+  path: books/services-and-providers.md
+  revision: 1
+  digest: sha256:24cdbe62e8633dffc1526f58c3303c049547a4676e64e31923f652baed4f6cd5
 slug: external-vault
 title: External vault references
 summary: Configure unattended credential references without storing a long-lived
@@ -26,6 +33,11 @@ relatedQuestionIds: []
 relatedObjectiveIds: []
 relatedProposalIds: []
 relatedDecisionIds: []
+guaranteeIds: []
+audiences:
+  primary: []
+  secondary: []
+  excluded: []
 capabilityIds:
   - admin.services.detail
 routePatterns:

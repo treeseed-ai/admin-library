@@ -1,10 +1,18 @@
 ---
-schemaVersion: treeseed.knowledge-page/v1
+schemaVersion: treeseed.knowledge-page/v2
 id: knowledge.authoring
-bookId: treeseed-team-administration
+projectId: 4c520946-e4c3-460d-a50f-255b65c78451
+bookRef:
+  store: treedx
+  model: book
+  id: treeseed-team-administration
+  path: books/team-administration.md
+  revision: 1
+  digest: sha256:23e3cb76f26e0a12710ce146cb3eabf34f770a8ae9fec1d50100505bc4605dda
 slug: knowledge-authoring
 title: Authoring team knowledge
-summary: Create repository-native books and pages through recoverable TreeDX workspaces and review branches.
+summary: Create repository-native books and pages through recoverable TreeDX
+  workspaces and review branches.
 status: published
 visibility: team
 order: 90
@@ -21,6 +29,11 @@ relatedQuestionIds: []
 relatedObjectiveIds: []
 relatedProposalIds: []
 relatedDecisionIds: []
+guaranteeIds: []
+audiences:
+  primary: []
+  secondary: []
+  excluded: []
 capabilityIds:
   - admin.knowledge.workbench
 routePatterns:

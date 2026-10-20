@@ -1,7 +1,14 @@
 ---
-schemaVersion: treeseed.knowledge-page/v1
+schemaVersion: treeseed.knowledge-page/v2
 id: vault.team-custody
-bookId: treeseed-credential-security
+projectId: 4c520946-e4c3-460d-a50f-255b65c78451
+bookRef:
+  store: treedx
+  model: book
+  id: treeseed-credential-security
+  path: books/credential-security.md
+  revision: 1
+  digest: sha256:e93c794a57eb4172e152306d2585a1ee2fd51f2d37e123f3eb7a277940849d24
 slug: team-custody
 title: Step 2 — Initialize team credential custody
 summary: Reuse the step-1 passphrase to unlock your key and wrap a new random
@@ -26,6 +33,11 @@ relatedQuestionIds: []
 relatedObjectiveIds: []
 relatedProposalIds: []
 relatedDecisionIds: []
+guaranteeIds: []
+audiences:
+  primary: []
+  secondary: []
+  excluded: []
 capabilityIds:
   - admin.services.vault
 routePatterns:

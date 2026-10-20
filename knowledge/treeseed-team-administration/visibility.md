@@ -1,7 +1,14 @@
 ---
-schemaVersion: treeseed.knowledge-page/v1
+schemaVersion: treeseed.knowledge-page/v2
 id: team.visibility
-bookId: treeseed-team-administration
+projectId: 4c520946-e4c3-460d-a50f-255b65c78451
+bookRef:
+  store: treedx
+  model: book
+  id: treeseed-team-administration
+  path: books/team-administration.md
+  revision: 1
+  digest: sha256:23e3cb76f26e0a12710ce146cb3eabf34f770a8ae9fec1d50100505bc4605dda
 slug: visibility
 title: Team profile visibility
 summary: Control whether the team identity profile is public without changing
@@ -24,6 +31,11 @@ relatedQuestionIds: []
 relatedObjectiveIds: []
 relatedProposalIds: []
 relatedDecisionIds: []
+guaranteeIds: []
+audiences:
+  primary: []
+  secondary: []
+  excluded: []
 capabilityIds:
   - admin.team.edit
 routePatterns:
@@ -43,4 +55,3 @@ documentationUrls: []
 Team profile visibility controls only the public team identity page. It does not make projects public or private and does not select where project knowledge is indexed.
 
 Public profiles expose approved identity fields. Memberships, roles, emails, operational counts, billing, hosts, and private metadata remain redacted.
-
