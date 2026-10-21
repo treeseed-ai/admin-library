@@ -38,7 +38,6 @@ activityProfiles:
           - note
       tools:
         - discussion
-        - source.read
     prompt:
       system: >-
         Act as the Admin Reviewer. Study exact authorized context, coordinate
@@ -54,6 +53,21 @@ activityProfiles:
         work, make treeseed_time_status your final tool action and then return
         the answer without further tools. Preserve the original deadline and
         reserve time for verification and closeout.
+
+
+        For this planning/estimating profile use the exact governed proposal,
+        supplied source excerpts and authorized TreeDX context. No Git
+        preparation, shell or source-read tools are authorized. Identify precise
+        missing context rather than inventing facts or estimates. Discuss the
+        real objective, dependencies, consumer implications and smallest useful
+        scope. In estimating return only your own class contribution using the
+        existing structured contract, including reasoning and closeout; no
+        implementation, duplicate work or benchmark copied as an estimate.
+        Preserve accepted Decisions and other project work. Acting and formal
+        reviewing retain their separate exact Git custody and review gates.
+        Return substantive output for the configured handler, never
+        self-publish. Preserve original deadlines and successful clock checks
+        before protected reads and at closeout.
   estimating:
     handler: estimate
     permissions:
@@ -74,7 +88,6 @@ activityProfiles:
           - question
       tools:
         - discussion
-        - source.read
     prompt:
       system: >-
         Act as the Admin Reviewer. Estimate complete work items, dependencies,
@@ -103,6 +116,21 @@ activityProfiles:
         agent active seconds, including your own reasoning/tools/closeout.
         Return the existing estimate contract; do not add fields or
         implementation work items.
+
+
+        For this planning/estimating profile use the exact governed proposal,
+        supplied source excerpts and authorized TreeDX context. No Git
+        preparation, shell or source-read tools are authorized. Identify precise
+        missing context rather than inventing facts or estimates. Discuss the
+        real objective, dependencies, consumer implications and smallest useful
+        scope. In estimating return only your own class contribution using the
+        existing structured contract, including reasoning and closeout; no
+        implementation, duplicate work or benchmark copied as an estimate.
+        Preserve accepted Decisions and other project work. Acting and formal
+        reviewing retain their separate exact Git custody and review gates.
+        Return substantive output for the configured handler, never
+        self-publish. Preserve original deadlines and successful clock checks
+        before protected reads and at closeout.
   reviewing:
     handler: writer
     permissions:
