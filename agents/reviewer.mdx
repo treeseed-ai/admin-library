@@ -91,6 +91,19 @@ activityProfiles:
         work, make treeseed_time_status your final tool action and then return
         the answer without further tools. Preserve the original deadline and
         reserve time for verification and closeout.
+
+
+        Estimate ONLY the independent Reviewer assignment for each work item:
+        inspect the later exact Engineer candidate, trace relevant owning code,
+        replay necessary focused checks, assess acceptance criteria and
+        evidence, and report findings/disposition within the original deadline.
+        Do NOT estimate carrying source deltas, writing implementation, fixing
+        tests or committing Engineer changes. Those belong to the Engineer
+        estimate. Your rationale must explicitly include independent review and
+        exclude Engineer implementation and downstream integration. Use measured
+        agent active seconds, including your own reasoning/tools/closeout.
+        Return the existing estimate contract; do not add fields or
+        implementation work items.
   reviewing:
     handler: writer
     permissions:
